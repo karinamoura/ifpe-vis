@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>IFPE - Plataforma Rosário</title>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .container{
+        max-width: 1000px !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="index.html" style="width: 150px;">
+      <img src="img/logo-ifpe-branco.svg" class="img-responsive" width="90%"/>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="index.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">INÍCIO</a>
+    <a class="py-2 d-none d-md-inline-block" href="situacao-matricula.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">SITUAÇÃO DE MATRÍCULA</a>
+    <a class="py-2 d-none d-md-inline-block" href="redimento-academico.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">RENDIMENTO ACADÊMICO</a>
+    <a class="py-2 d-none d-md-inline-block" href="cidade-origem.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">CIDADE DE ORIGEM</a>
+
+  </nav>
+</header>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Plataforma Rosário</h1>
+      <p class="lead fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna lectus, fermentum at sapien non, luctus vestibulum nisl. Donec pellentesque a enim ut facilisis. Nulla facilisi</p>
+      <a class="btn btn-outline-secondary" href="#">Saiba mais</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+
+  <div class="d-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <h2 class="display-6">Detalhamento da Situação de Matrícula do Discente por Cidade de Origem </h2>
+      <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 950px; margin: 0px; padding: 0px; border: none;" src="http://public.tableau.com/views/Mapaevaso/Painel1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=0"></iframe>
+    
+    </div>
+  </div>
+
+
+</main>
+
+<footer class="bg-green">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md text-center">
+        <img src="img/logo-ifpe-branco.svg" class="img-fluid" width="30%">
+        <small class="d-block mb-3 text-white display-7 pt-3">&copy; 2021</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/dist/js/bootstrap.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="sankey.js"></script>
+    <script>
+      var bootstrapButton = $.fn.button.noConflict(); // return $.fn.button to previously assigned value
+      $.fn.bootstrapBtn = bootstrapButton;
+    </script>
+  </body>
+</html>
