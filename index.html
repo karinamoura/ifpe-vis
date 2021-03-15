@@ -29,6 +29,10 @@
           font-size: 3.5rem;
         }
       }
+
+      .container{
+        max-width: 1000px !important;
+      }
     </style>
 
     
@@ -39,13 +43,13 @@
     
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" style="width: 150px;">
+    <a class="py-2" href="index.html" style="width: 150px;">
       <img src="img/logo-ifpe-branco.svg" class="img-responsive" width="90%"/>
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#" style="margin-top: 10px;text-decoration: none;font-weight: 500;">INÍCIO</a>
-    <a class="py-2 d-none d-md-inline-block" href="#" style="margin-top: 10px;text-decoration: none;font-weight: 500;">SITUAÇÃO ACADÊMICA</a>
-    <a class="py-2 d-none d-md-inline-block" href="#" style="margin-top: 10px;text-decoration: none;font-weight: 500;">CURSO</a>
-    <a class="py-2 d-none d-md-inline-block" href="#" style="margin-top: 10px;text-decoration: none;font-weight: 500;">SITUAÇÃO SOCIOECONÔMICA</a>
+    <a class="py-2 d-none d-md-inline-block" href="index.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">INÍCIO</a>
+    <a class="py-2 d-none d-md-inline-block" href="situacao-matricula.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">SITUAÇÃO DE MATRÍCULA</a>
+    <a class="py-2 d-none d-md-inline-block" href="redimento-academico.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">RENDIMENTO ACADÊMICO</a>
+    <a class="py-2 d-none d-md-inline-block" href="cidade-origem.html" style="margin-top: 10px;text-decoration: none;font-weight: 500;">CIDADE DE ORIGEM</a>
 
   </nav>
 </header>
@@ -61,93 +65,38 @@
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
 
-  <div class="d-flex w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-7">Distribuição de Alunos</h2>
-        <p class="lead">O mapa demonstra a origem <br> dos alunos do IFPE  por todos os estados<br> e municípios do Brasil.</p>
+  <section id="distribuicao-discentes">
+    <div class="d-flex w-100 my-md-3 ps-md-3">
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-7">Distribuição de Discentes</h2>
+          <p class="lead">O mapa demonstra a cidade de origem <br> dos alunos do IFPE por todos os estados<br> e municípios do Brasil.</p>
+        </div>
+        <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
       </div>
-      <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-    </div>
-    <div class="bg-light p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="false" class="tableauViz" style="display: block; width: 100%; height: 600px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha4?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=0"></iframe>
-    </div>
-  </div>
-
-
-  <div class="d-flex w-100 my-md-3 ps-md-3">
-    <div class="bg-green p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
-      <div class="my-3 py-3">
-        <p class="display-6">Distribuição de Alunos por Modalidade de Ensino</p>
-        <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 600px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha5?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=1"></iframe>
+      <div class="bg-light p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="false" class="tableauViz" style="display: block; width: 100%; height: 600px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha4?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=0"></iframe>
       </div>
     </div>
 
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-7">Another headline</h2>
-        <p class="lead">% de dados... </p>
+
+    <div class="d-flex w-100 my-md-3 ps-md-3">
+      <div class="bg-green p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+        <div class="my-3 py-3">
+          <p class="display-6">Distribuição de Discentes por Modalidade de Ensino</p>
+          <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 600px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha5?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=1"></iframe>
+        </div>
       </div>
 
-    </div>
-  </div>
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-7">Another headline</h2>
+          <p class="lead">% de dados... </p>
+        </div>
 
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <button type="button" class="btn btn-secondary" id="recife">UFPE RECIFE</button>
-    <button type="button" class="btn btn-secondary" id="palmares">UFPE PALMARES</button>
-    <div class="text-center" id="sankey_multiple" style="width: 900px; height: 300px;"></div>
-  </div>
-
-  <div class="d-flex w-100 my-md-3 ps-md-3">
-    <div class="bg-light p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <h2 class="display-6">Situação de Matrícula por Turno e Idade</h2>
-      <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 600px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha2?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=2"></iframe>    
-    </div>
-    <div class="bg-green me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Titulo</h2>
-        <p class="lead">% de dados nulos.</p>
-      </div>
-      
-    </div>
-  </div>
-
-  <div class="d-flex w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Escola Origem</h2>
-        <p class="lead">39,43% de dados nulos.</p>
-      </div>
-      <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-light p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <h2 class="display-6">Situação de Matrícula por Escola de Origem</h2>
-      <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 600px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=2"></iframe>
-    </div>
-  </div>
-
-  <div class="d-flex w-100 my-md-3 ps-md-3">
-    <div class="bg-green p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 p-3">
-        <p class="display-6">Situação de Matrícula por Cota e Cor/Raça.</p>
-        <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 700px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Mapaevaso/Planilha6?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=0"></iframe>
       </div>
     </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another</h2>
-        <p class="lead">And an even.</p>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="d-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light p-2 flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <h2 class="display-6">Rendimento de Discentes por Campus, Curso e Disciplina </h2>
-      <iframe frameborder="0" marginheight="0" marginwidth="0" title="Visualização de dados" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 950px; margin: 0px; padding: 0px; border: none;" src="https://public.tableau.com/views/Reprovaes/Painel1?:embed=y&amp;:showVizHome=no&amp;:host_url=https%3A%2F%2Fpublic.tableau.com%2F&amp;:embed_code_version=3&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=no&amp;:display_spinner=no&amp;:display_overlay=yes&amp;:display_count=yes&amp;:language=pt&amp;publish=yes&amp;:loadOrderID=0"></iframe>
-    </div>
-  </div>
+  </section>
 
 
 </main>
